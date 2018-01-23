@@ -10,7 +10,7 @@
                                                                       datetime="{{ post.created_time }}">{{ post.created_time }}</time></a></span>
                             <span class="post-author"><a href="#">{{ post.author }}</a></span>
                             <span class="comments-link"><a href="#">{{ post.comment_set.all | length }} 评论</a></span>
-                            <span class="views-count"><a href="#">588 阅读</a></span>
+                            <span class="views-count"><a href="#">{{ post.views }} 阅读</a></span>
                         </div>
                     </header>
                     <div class="entry-content clearfix">
@@ -65,7 +65,7 @@
          {% endblock %}
             <aside class="col-md-4">
                 {% block toc %}
-                <div class="widget widget-content">
+                <!--<div class="widget widget-content">
                     <h3 class="widget-title">文章目录</h3>
                     <ul>
                         <li>
@@ -84,6 +84,6 @@
                             <a href="#">获取帮助</a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 {% endblock %}
              
