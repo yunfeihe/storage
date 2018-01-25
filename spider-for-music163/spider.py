@@ -5,7 +5,8 @@ from pprint import pprint
 
 def get_response_from_url(url):
     headers = {
-        "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+        "Accept":"""text/html,application/xhtml+xml,application/xml
+            ;q=0.9,image/webp,image/apng,*/*;q=0.8""",
         "Accept-Encoding":"gzip, deflate",
         "Accept-Language":"zh-CN,zh;q=0.9",
         "Connection":"keep-alive",

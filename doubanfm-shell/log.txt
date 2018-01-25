@@ -1,0 +1,43 @@
+
+login:
+    source:fm
+    referer:https://douban.fm/
+    ck:Nkfk
+    name:18256753032
+    password:sylove521
+    captcha_solution:
+    captcha_id:
+
+normal:
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Connection:keep-alive
+Cookie:flag="ok"; bid=s9ueuYQyH68; ac="1516873986"; _vwo_uuid_v2=96D0A9F16F980A572DA6DFA21CA7C3E7|938d57f8776a23cb4064ee6fd468f61a; _ga=GA1.2.455415502.1516873991; _gid=GA1.2.1478055677.1516873991; dbcl2="166110903:x5ApRxbc3Bc"; ck=nJs1
+Host:douban.fm
+Upgrade-Insecure-Requests:1
+User-Agent:Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+首页播放清单（get）：
+    https://douban.fm/j/v2/playlist?
+    channel:84007
+    kbps:128
+    client:s:mainsite|y:3.0
+    app_name:radio_website
+    version:100
+    type:s
+    sid:1472771
+    pt:
+    pb:128
+    apikey:
+
+    channel:84007
+    kbps:128
+    client:s:mainsite|y:3.0
+    app_name:radio_website
+    version:100
+    type:s
+    sid:1809554
+    pt:
+    pb:128
+    apikey:
