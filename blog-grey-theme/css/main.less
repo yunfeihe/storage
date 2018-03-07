@@ -1,0 +1,92 @@
+@wrap-color-top: #dbdada;
+@wrap-color-rest:#fafafa;
+@bg-color: #fff;
+@font-color: #9e9e9e;
+
+@import "utils.less";
+
+* {
+    box-sizing: border-box;
+}
+
+.wrap {
+    // width: 1300px;
+    // margin: 0 auto;
+    .wrap-top{
+        height: 250px;
+        background-color:@wrap-color-top;
+    }
+}
+
+.wrap-top {
+    .header {
+        height: 150px;
+    }
+
+    .nav {
+        .makeCenter();
+        .makeUsual();
+        height: 100px;
+        background-color: @bg-color;
+        border-bottom: 2px solid #fbfbfb;
+        overflow: hidden; //清除浮动
+
+        .icon {
+            margin-left: 50px;
+            float: left;
+        }
+
+        .links {
+            line-height: 70px;
+            height: 70px;
+            margin-right: 50px;
+            float: right;
+            // display: flex;
+
+            
+
+            //清除A标签默认样式
+            a:hover, a:visited, a:link, a:active {
+                color: black;
+            }
+            a {
+                display: inline-block;
+                width: 120px;
+                text-align: center;
+                font-size: 40px;
+                text-decoration: none;
+                transition: 0.5s;
+                //通用样式
+                margin-left: 20px;
+                &:last-of-type(1) {
+                    margin-left: 0;
+                }
+
+                &:hover, &.active {
+                    background-color: @wrap-color-top;
+                    box-shadow: 0 0 5px;
+                }
+            }
+
+
+        }
+
+    }
+}
+
+.wrap-middle {
+    // height: 500px; //临时
+    background-color: @wrap-color-rest;
+
+    .content {
+        .makeCenter();
+        .makeUsual();
+        height: 1000px; // 临时
+        background-color: @bg-color;
+    }
+    
+}
+
+.wrap-bottom {
+
+}
