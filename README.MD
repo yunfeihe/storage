@@ -1,1 +1,0 @@
-A small blog program
