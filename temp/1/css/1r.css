@@ -191,14 +191,14 @@ section.show-item-col .content.service-offerings .item .middle .li {
   letter-spacing: 4px;
 }
 section.show-item-col .content.service-offerings .item:nth-of-type(1) .top {
-  background: url(../images/service-offerings.png) no-repeat;
+  background: url(../images/service-offerings.png) no-repeat 0 2px;
   background-size: 100% 300%;
 }
 section.show-item-col .content.service-offerings .item:nth-of-type(2) .top {
-  background: url(../images/service-offerings.png) no-repeat 0 -173px;
+  background: url(../images/service-offerings.png) no-repeat 0 -172px;
   background-size: 100% 300%;
 }
 section.show-item-col .content.service-offerings .item:nth-of-type(3) .top {
-  background: url(../images/service-offerings.png) no-repeat 0 -346px;
+  background: url(../images/service-offerings.png) no-repeat 0 -344px;
   background-size: 100% 300%;
 }
