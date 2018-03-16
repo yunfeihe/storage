@@ -1,0 +1,239 @@
+@import "./init.less";
+body {
+    min-width: 980px;
+    background-color: white;
+}
+
+header {
+
+    nav {
+        // height: 100px;
+        height: 100px;
+        background-color: #020c18;
+        
+        overflow: hidden;  //clear float
+
+        #id-div-logo {
+            padding: 54px 3px 0 3px;
+            height: 76px;
+            margin-left: 200/1920*100%;
+            line-height: 22px;
+            background: url(../images/logo.png) no-repeat 0 20px;
+            float: left;
+            h1 { 
+                color: #00a1e9;
+                font-size: 22px;
+                letter-spacing: 27px;
+                font-weight: normal;
+            }
+        }
+
+        #id-div-menu {
+            float: right;
+            padding-top: 29px;
+            width: 536px;
+            margin-right: 200/1920*100%;
+            height: 46px;
+            ul {
+                display: inline-block;
+                width: 382px;
+                height: 46px;
+                line-height: 46px;
+                // background-color: #fff;
+                color: white;
+                font-size: 18px;
+                word-spacing: 26px;
+                letter-spacing: 1px;
+    
+                li {
+                    display: inline-block;
+                    &:hover, &.active {
+                        color: #00a1e9;
+                    }
+    
+                    //hack
+                    &:nth-of-type(1) {
+                        span {
+                            color: black;
+                            user-select: none;
+                        }
+                    }
+                }
+    
+            }    
+    
+            .btn {
+                display: inline-block;
+                width: 122px;
+                height: 42px;
+                line-height: 40px;
+                text-align: center;
+                margin-left: 27px;
+                color: white;  
+                background: url(../images/btn.png) 0 44px;
+                letter-spacing: 1px;
+                font-size: 19px;
+                
+                &:hover {
+                    cursor: pointer;
+                    background: url(../images/btn.png) no-repeat;
+                }
+            }
+        }
+    }
+
+}
+
+#id-div-slide-show {
+    background-color: purple;
+    
+    ul.images {
+        display: block;
+        position: relative;
+        width: 100%;
+
+        img {  //responsive
+            max-width: 100%;
+            height: auto;
+            // display: block;
+            vertical-align:middle;
+            // vertical-align: none;
+        }
+
+        // overflow: hidden;
+    }
+
+    li {
+        position: absolute;
+        transition: 1s;
+        opacity: 0;
+        &.active {
+            opacity: 1;
+        }
+        &:last-of-type{
+            // 占位且保持高度
+            position: relative;
+        }
+
+    }
+    #id-div-controlers {
+        width: 100%;
+        // height: 100%;  //不起作用
+        background-color: red;
+    }
+}
+
+//要求复用 不写在main里
+//页面主题的实现
+main {
+    // background-color: black;
+}
+
+//专注于对show-item本身架构的实现
+section.show-item-col{
+    margin-top: 160px; //隔开每个show-item
+    .head {
+        // height: 112px;
+        margin-bottom: 120px; // 隔开与show-item.content的距离
+        //indenpendent
+        .title {
+            margin-bottom: 14px;
+            // indpendent
+            color: #020c18;
+            text-align: center;
+            display: block;
+            height: 35px;
+            line-height: 35px;
+            font-size: 35px;
+            letter-spacing: 5px;
+
+        }
+        .hr {
+            // indpendent
+            font-size: 35px;
+            display: block;
+            margin: 0 auto;
+            width: 2.5em; //注册letter spacing 导致标准em无法覆盖字体对等长度
+            box-sizing: border-box;
+            background-color: #00a1e9;
+            border-radius: 5px; //!!!!!!!!!!!!!!!!设计图未要求
+            height: 7px;
+        }
+        .title-eng {
+            margin-top: 27px;
+            //indentpendent
+            letter-spacing: 10px;
+            word-spacing: 10px;
+            color: #4d4d4d;
+            height: 28px;
+            line-height: 28px;
+            font-size: 28px;
+            text-align: center;
+            display: block ;
+            // width: 473px;
+        }
+    }
+}
+
+
+//show-item content样式特别定制
+
+section.show-item-col .content{
+    width: 1520 / 1920 * 100%;
+    // background-color: green;
+    margin: 0 auto;
+    &.service-offerings {
+        .item {
+            //real width 1520px;
+            display: inline-block;
+            width: 460 / 1520 * 100%;
+            margin-right: 25 / 1520 * 100%;
+            height: 682px;
+            background-color: #fbfbfb;
+            &:last-of-type(1) {
+                margin-right: 0;
+            }
+            .top {
+                line-height: 172 - 12px;
+                height: 172px;
+                text-align: center;
+                font-size: 48px;
+                letter-spacing: 4px;
+                color: white;
+                margin-bottom: 55px; //隔开与.item的距离
+
+            }
+
+            .middle {
+                .li {
+                    display: block;
+                    height: 62px;
+                    line-height: 62px;
+                    font-size: 32px;
+                    letter-spacing: 4px;
+                }
+            }
+            &:nth-of-type(1) {
+                .top {
+                    background: url(../images/service-offerings.png) no-repeat;
+                    background-size: 100% 300%;
+                }
+            }
+
+            &:nth-of-type(2) {
+                .top {
+                    background: url(../images/service-offerings.png) no-repeat 0 -173px;
+                    background-size: 100% 300%;
+                }
+            }
+
+            &:nth-of-type(3) {
+                .top {
+                    background: url(../images/service-offerings.png) no-repeat 0 -173 * 2px;
+                    background-size: 100% 300%;
+                }
+            }
+        }
+        height: 682px;
+    }
+}
