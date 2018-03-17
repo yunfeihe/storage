@@ -132,7 +132,7 @@ section.show-item-col .head .title-eng {
   display: block ;
 }
 body {
-  min-width: 980px;
+  min-width: 1520px;
 }
 #id-div-pic {
   width: 100%;
@@ -173,9 +173,116 @@ section.show-item-col .content.diffculties img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 section.show-item-col .content.advantage img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
+}
+section.show-item-col .content.process .item {
+  height: auto;
+  white-space: nowrap;
+  margin-bottom: 100px;
+}
+section.show-item-col .content.process .item img {
+  display: block;
+}
+section.show-item-col .content.process .item:last-of-type {
+  margin-bottom: 0;
+}
+section.show-item-col .content.process .item .wrap-img {
+  width: 30%;
+  display: inline-block;
+}
+section.show-item-col .content.process .item .description {
+  vertical-align: top;
+  display: inline-block;
+  white-space: normal;
+  width: 70%;
+  padding-top: 95px;
+}
+section.show-item-col .content.process .item .description .title {
+  display: block;
+  font-size: 36px;
+  line-height: 36px;
+  height: 36px;
+  color: #00a1e9;
+  margin-bottom: 40px;
+}
+section.show-item-col .content.process .item .description .rest {
+  display: block;
+  font-size: 24px;
+  color: #787b7f;
+}
+section.show-item-col .content.demands .item {
+  height: 110px;
+}
+section.show-item-col .content.demands .item.demand {
+  height: auto !important;
+  margin-bottom: 60px;
+}
+section.show-item-col .content.demands .item .title {
+  display: inline-block;
+  height: 72px;
+  line-height: 72px;
+  letter-spacing: 4px;
+  width: 12%;
+  font-size: 24px;
+  vertical-align: top;
+}
+section.show-item-col .content.demands .item input,
+section.show-item-col .content.demands .item textarea {
+  display: inline-block;
+  width: 85%;
+  height: 72px;
+  font-size: 24px;
+  border-radius: 13px;
+  outline: none;
+  padding-left: 27px;
+  border: 2px solid #8a8a8a;
+}
+section.show-item-col .content.demands .item textarea {
+  height: 320px;
+  padding: 25px;
+  font-size: 28px;
+  width: 87%;
+  box-sizing: border-box;
+}
+section.show-item-col .content.demands .btn {
+  text-align: center;
+  margin-bottom: 72px;
+}
+section.show-item-col .content.demands .btn button {
+  width: 360px;
+  height: 80px;
+  font-size: 36px;
+  letter-spacing: 4px;
+  background-color: #00c0ff;
+  border-radius: 40px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+section.show-item-col .content.demands .isok {
+  margin-bottom: 64px;
+}
+section.show-item-col .content.demands .isok.true {
+  display: block;
+}
+section.show-item-col .content.demands .isok.false {
+  display: none;
+}
+section.show-item-col .content.demands .isok img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 312px;
+  margin-bottom: 82px;
+}
+section.show-item-col .content.demands .isok span {
+  margin: 0 auto;
+  display: block;
+  font-size: 36px;
+  text-align: center;
 }
