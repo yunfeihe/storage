@@ -167,9 +167,6 @@ section.show-item-col .content {
   width: 79.16666667%;
   margin: 0 auto;
 }
-section.show-item-col .content.service-offerings {
-  text-align: center;
-}
 section.show-item-col .content.service-offerings .item {
   display: inline-block;
   width: 30.26315789%;
@@ -412,4 +409,38 @@ section.show-item-col .content.cases .item .title {
   color: white;
   background-color: rgba(71, 191, 255, 0.9);
   transition: 0.7s;
+}
+section.show-item-col .content.partners {
+  background-color: red;
+  margin-bottom: 250px;
+}
+section.show-item-col .content.partners img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+footer {
+  margin: 0 auto;
+  background: url(../images/footer.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+}
+footer span {
+  display: block;
+  text-align: center;
+  color: white;
+}
+footer .title {
+  height: 24px;
+  line-height: 24px;
+  font-size: 24px;
+  margin-bottom: 59px;
+}
+footer .item {
+  margin-top: 24px;
+  height: 18px;
+  line-height: 18px;
+}
+footer .item:last-of-type {
+  padding-bottom: 200px;
 }
