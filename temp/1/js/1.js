@@ -1,19 +1,19 @@
 var main = function () {
     initSlideShow();
+    autoJustifyControlerPos();
+    window.onresize = autoJustifyControlerPos();
 
-    window.onresize = function(e){
-        var slideShow = s("#id-div-slide-show ul");
-        var controlers = sa(".controler");
+};
+
+var autoJustifyControlerPos = function(){
+    var slideShow = s("#id-div-slide-show ul");
+    var controlers = sa(".controler");
+    log(controlers[i]);
+    for(var i=0; i<controlers.length; i++){
         log(controlers[i]);
-        for(var i=0; i<controlers.length; i++){
-            log(controlers[i]);
-            controlers[i].style.bottom = slideShow.offsetHeight / 2 + controlers[i].offsetHeight + "px";
-        }
-        // var slideShow.offsetHeight
-    };
-    };
-
-
+        controlers[i].style.bottom = slideShow.offsetHeight / 2 + controlers[i].offsetHeight + "px";
+    }
+}
 
 var initSlideShow = function () {
     window.currentIndex = 0;
