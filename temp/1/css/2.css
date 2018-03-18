@@ -250,21 +250,6 @@ section.show-item-col .content.demands .item textarea {
   width: 87%;
   box-sizing: border-box;
 }
-section.show-item-col .content.demands .btn {
-  text-align: center;
-  margin-bottom: 72px;
-}
-section.show-item-col .content.demands .btn button {
-  width: 360px;
-  height: 80px;
-  font-size: 36px;
-  letter-spacing: 4px;
-  background-color: #00c0ff;
-  border-radius: 40px;
-  color: white;
-  outline: none;
-  cursor: pointer;
-}
 section.show-item-col .content.demands .isok {
   margin-bottom: 64px;
 }
@@ -285,4 +270,76 @@ section.show-item-col .content.demands .isok span {
   display: block;
   font-size: 36px;
   text-align: center;
+}
+.btn {
+  text-align: center;
+  margin-bottom: 72px;
+}
+.btn button {
+  width: 360px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 36px;
+  letter-spacing: 4px;
+  background-color: #00c0ff;
+  border-radius: 40px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+section.qrcode {
+  width: 79.16666667%;
+  margin: 0 auto;
+}
+section.qrcode img {
+  display: inline-block;
+  margin-left: 12%;
+}
+section.qrcode .rest {
+  margin-top: 50px;
+  display: inline-block;
+  margin-left: 72px;
+  vertical-align: top;
+}
+section.qrcode .rest span {
+  display: block;
+  margin-bottom: 43px;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 4px;
+  height: 36px;
+  line-height: 36px;
+}
+section.qrcode .btn {
+  margin-top: 80px;
+}
+footer {
+  height: 351px;
+  background-color: #051223;
+  padding-top: 81px;
+}
+footer span {
+  display: block;
+  text-align: center;
+}
+footer .title {
+  font-size: 24px;
+  height: 24px ;
+  line-height: 24px;
+  margin-bottom: 59px;
+  color: white;
+}
+footer .normal {
+  color: white;
+  height: 18px;
+  line-height: 18px;
+  font-size: 18px;
+  margin-top: 24px;
+}
+footer .right {
+  font-size: 16px;
+  height: 16px;
+  line-height: 16px;
+  margin-top: 123px;
+  color: #85888c;
 }
