@@ -1,7 +1,9 @@
 var main = function () {
     initSlideShow();
     autoJustifyControlerPos();
-    window.onresize = autoJustifyControlerPos();
+    window.onresize = function(){
+        autoJustifyControlerPos();
+    }
 
 };
 
