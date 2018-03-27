@@ -1,0 +1,122 @@
+.goods {
+  display: flex;
+  position: absolute;
+  top: 175px;
+  bottom: 46px;
+  width: 100%;
+  overflow: hidden;
+}
+.goods .menu-wrap {
+  flex: 0 0 80px;
+  width: 80px;
+}
+.goods .menu-wrap ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.goods .menu-wrap .menu-item {
+  background-color: #f3f5f7;
+  display: table;
+  height: 54px;
+  width: 56px;
+  line-height: 14px;
+  padding: 0 12px;
+}
+.goods .menu-wrap .menu-item.active {
+  position: relative;
+  top: -1px;
+  z-index: 100;
+  background-color: #fff;
+}
+.goods .menu-wrap .menu-item.active .text {
+  border: none;
+}
+.goods .menu-wrap .menu-item .text {
+  display: table-cell;
+  vertical-align: middle;
+  width: 56px;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 14px;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.goods .foods-wrap {
+  flex: 1;
+}
+.goods .foods-wrap ul,
+.goods .foods-wrap h1,
+.goods .foods-wrap h2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.goods .foods-wrap .title {
+  height: 26px;
+  font-size: 12px;
+  line-height: 26px;
+  color: #93999f;
+  background-color: #f3f5f7;
+  border-left: 2px solid #d9dde1;
+  padding-left: 12px;
+}
+.goods .foods-wrap .food-li {
+  display: flex;
+  margin: 18px 18px 0 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+  position: relative;
+}
+.goods .foods-wrap .food-li:last-of-type {
+  border: none;
+}
+.goods .foods-wrap .food-li .icon {
+  margin-right: 10px;
+}
+.goods .foods-wrap .food-li .icon img {
+  width: 64px;
+  height: 64px;
+}
+.goods .foods-wrap .food-li .content .name {
+  font-size: 14px;
+  color: #07111b;
+  line-height: 14px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.goods .foods-wrap .food-li .content .description {
+  display: block;
+  margin-bottom: 8px;
+}
+.goods .foods-wrap .food-li .content .description,
+.goods .foods-wrap .food-li .content .extra {
+  font-size: 10px;
+  color: #93999f;
+  line-height: 10px;
+}
+.goods .foods-wrap .food-li .content .extra {
+  margin-bottom: 8px;
+}
+.goods .foods-wrap .food-li .content .price {
+  font-size: 0;
+}
+.goods .foods-wrap .food-li .content .price .now-price {
+  font-size: 14px;
+  color: #f01414;
+  font-weight: 700;
+  line-height: 24px;
+}
+.goods .foods-wrap .food-li .content .price .old-price {
+  display: inline-blocks;
+  font-size: 10px;
+  color: #93999f;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+.goods .foods-wrap .food-li .content .cartcontrol-wrap {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+}

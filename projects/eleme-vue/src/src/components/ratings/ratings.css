@@ -1,0 +1,157 @@
+h1,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ratings {
+  position: absolute;
+  top: 175px;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  overflow: hidden;
+}
+.ratings .overview {
+  display: flex;
+  padding: 18px 0;
+}
+.ratings .overview .left {
+  padding: 6px 0;
+  flex: 0 0 137px;
+  width: 137px;
+  border-right: 1px solid rgba(7, 17, 27, 0.1);
+  text-align: center;
+}
+.ratings .overview .left .score {
+  font-size: 24px;
+  color: #ff9900;
+  line-height: 28px;
+  margin-bottom: 6px;
+}
+.ratings .overview .left .title {
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #07111b;
+  line-height: 12px;
+  font-weight: 700;
+}
+.ratings .overview .left .rank {
+  font-size: 10px;
+  color: rgba(7, 17, 27, 0.5);
+  line-height: 10px;
+}
+.ratings .overview .right {
+  flex: 1;
+  padding: 6px 0 6px 24px;
+}
+.ratings .overview .right .score-wrap {
+  margin-bottom: 8px;
+  font-size: 0;
+}
+.ratings .overview .right .score-wrap .title {
+  display: inline-block;
+  font-size: 12px;
+  color: #07111b;
+  line-height: 18px;
+  vertical-align: top;
+}
+.ratings .overview .right .score-wrap .star {
+  display: inline-block;
+  margin: 0 12px;
+  vertical-align: top;
+}
+.ratings .overview .right .score-wrap .score {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ff9b99;
+}
+.ratings .overview .right .delivery-time {
+  display: inline-block;
+  font-size: 0;
+  vertical-align: top;
+}
+.ratings .overview .right .delivery-time .title {
+  font-size: 12px;
+  color: #07111b;
+  line-height: 18px;
+}
+.ratings .overview .right .delivery-time .time {
+  font-size: 12px;
+  margin-left: 12px;
+  line-height: 18px;
+  font-size-adjust: 12px;
+  color: #93999f;
+}
+.ratings .rating-wrap {
+  padding: 0 18px;
+}
+.ratings .rating-wrap .rating-item {
+  display: flex;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.ratings .rating-wrap .rating-item .avatar {
+  flex: 0 0 28px;
+  width: 28px;
+  margin-right: 12px;
+}
+.ratings .rating-wrap .rating-item .avatar img {
+  border-radius: 50%;
+}
+.ratings .rating-wrap .rating-item .content {
+  position: relative;
+  flex: 1;
+}
+.ratings .rating-wrap .rating-item .content .name {
+  line-height: 10px;
+  font-size: 12px;
+  color: #07111b;
+  margin-bottom: 4px;
+}
+.ratings .rating-wrap .rating-item .content .star-wrap {
+  margin-bottom: 6px;
+  font-size: 0;
+}
+.ratings .rating-wrap .rating-item .content .star-wrap .star {
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: top;
+}
+.ratings .rating-wrap .rating-item .content .text {
+  line-height: 18px;
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #07111b;
+}
+.ratings .rating-wrap .rating-item .content .recommend {
+  line-height: 16px;
+  font-size: 0;
+}
+.ratings .rating-wrap .rating-item .content .recommend .icon,
+.ratings .rating-wrap .rating-item .content .recommend .item {
+  display: inline-block;
+  margin: 0 8px 4px 0;
+  font-size: 9px;
+}
+.ratings .rating-wrap .rating-item .content .recommend .icon {
+  color: #00a0dc;
+}
+.ratings .rating-wrap .rating-item .content .recommend .item {
+  padding: 0 6px;
+  border: 1px solid rgba(7, 17, 27, 0.1);
+  border-radius: 1px;
+  color: #93999f;
+  background-color: #fff;
+}
+.ratings .rating-wrap .rating-item .content .time {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 200;
+  color: #93999f;
+  line-height: 12px;
+  right: 18px;
+  top: 0px;
+}

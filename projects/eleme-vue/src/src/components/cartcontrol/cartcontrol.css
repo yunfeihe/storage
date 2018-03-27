@@ -1,0 +1,25 @@
+.cart-control {
+  font-size: 0;
+}
+.cart-control div {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 24px;
+}
+.cart-control .cart-minus {
+  color: #00a0dc;
+  padding: 6px;
+}
+.cart-control .cart-count {
+  vertical-align: top;
+  width: 12px;
+  font-size: 10px;
+  padding-top: 6px;
+  line-height: 24px;
+  text-align: center;
+  color: #93999f;
+}
+.cart-control .cart-plus {
+  color: #00a0dc;
+  padding: 6px;
+}

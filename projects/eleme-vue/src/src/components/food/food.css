@@ -1,0 +1,189 @@
+.food {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 48px;
+  z-index: 30;
+  width: 100%;
+  background-color: white;
+}
+.food .image-header {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+}
+.food .image-header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.food .image-header .back {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.food .image-header .back i {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+}
+.food .content {
+  position: relative;
+  padding: 18px;
+}
+.food .content h1 {
+  margin: 0;
+  padding: 0;
+}
+.food .content .title {
+  line-height: 14px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #07111b;
+}
+.food .content .detail {
+  margin-bottom: 18px;
+  height: 10px;
+  line-height: 10px;
+  font-size: 0;
+}
+.food .content .detail .sell-count,
+.food .content .detail .rating {
+  font-size: 10px;
+  color: #93999f;
+}
+.food .content .detail .rating {
+  margin-right: 12px;
+}
+.food .content .price {
+  font-size: 0;
+}
+.food .content .price .now {
+  font-size: 14px;
+  color: #f01414;
+  font-weight: 700;
+  line-height: 24px;
+}
+.food .content .price .old {
+  display: inline-blocks;
+  font-size: 10px;
+  color: #93999f;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+.food .content .cartcontrol-wrap {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+.food .content .buy {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 10;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  font-size: 10px;
+  border-radius: 12px;
+  color: white;
+  background-color: #00a0dc;
+}
+.food .info {
+  padding: 18px;
+}
+.food .info .title {
+  margin: 0;
+  padding: 0;
+  line-height: 14px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #07111b;
+}
+.food .info .text {
+  line-height: 24px;
+  padding: 0 8px;
+  font-size: 12px;
+  color: #4d555d;
+}
+.food .rating {
+  padding-top: 18px;
+}
+.food .rating h1,
+.food .rating ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.food .rating .title {
+  line-height: 14px;
+  font-size: 14px;
+  margin-left: 18px;
+  color: #07111b;
+}
+.food .rating-wrap {
+  padding: 0 18px;
+}
+.food .rating-wrap ul {
+  margin: o;
+  padding: 0;
+  list-style: none;
+}
+.food .rating-wrap .rating-item {
+  position: relative;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.food .rating-wrap .rating-item .user {
+  position: absolute;
+  right: 0;
+  top: 16px;
+  font-size: 0;
+  line-height: 12px;
+}
+.food .rating-wrap .rating-item .user .name {
+  display: inline-block;
+  font-size: 10px;
+  vertical-align: top;
+  color: #8f999f;
+  margin-right: 6px;
+}
+.food .rating-wrap .rating-item .user .avatar {
+  border-radius: 50%;
+}
+.food .rating-wrap .rating-item .time {
+  margin-bottom: 6px;
+  line-height: 12px;
+  font-size: 10px;
+  color: #93999f;
+}
+.food .rating-wrap .rating-item .text {
+  display: block;
+  line-height: 16px;
+  font-size: 12px;
+  color: #070c1b;
+}
+.food .rating-wrap .rating-item .text .icon {
+  line-height: 16px;
+  margin-right: 4px;
+  font-size: 12px;
+}
+.food .rating-wrap .rating-item .text .icon.icon-thumb_up {
+  color: #00a0dc;
+}
+.food .rating-wrap .rating-item .text .icon.icon-thumb_down {
+  color: #93999f;
+}
+.food .rating-wrap .no-rating {
+  padding: 16px 0;
+  font-size: 12px;
+  color: #93999f;
+}
