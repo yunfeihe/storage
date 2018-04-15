@@ -27,21 +27,17 @@ function fib_iteration(n) {
 }
 
 //time  o(n)
-//space o(？)
+//space o(n)
 function better_fib_recursion(n) {
     let memory = [null, 1, 1];  //基1，所以0为null
-    
     function fib_recursion_base(n) {
         let result = memory[n];
-
         if(typeof result === "undefined") {
             memory[n] = fib_recursion_base(n - 1) + fib_recursion_base(n - 2);
             result = memory[n];
         }
-
         return result;
     }
-    
     return fib_recursion_base(n);
 }
 

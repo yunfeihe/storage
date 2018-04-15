@@ -2,7 +2,7 @@ function sqrt(x) {
     //f(y) = y * y - x 的根就是x的平方根，在此我们
     //可以利用牛顿迭代法来求此根
     return newtonMethod(function(y){
-        return Math.abs(y * y - x);
+        return y * y - x;
     }, 1);
 }
 
@@ -45,4 +45,4 @@ function isCloseEnough(newValue, oldValue) {
     }
 }
 
-console.log("sqrt(4)", sqrt(9));
+console.log("sqrt(9)", sqrt(9));
