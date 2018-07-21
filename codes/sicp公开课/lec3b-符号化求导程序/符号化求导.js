@@ -39,12 +39,22 @@ let e = [
 
 
 
+// function logexp(exp) {
+//     let str;
+//     if(exp.constructor !== Array) {
+//         return exp;
+//     } else {
+//         str = `(${optor(exp)} ${logexp(opand1(exp))} ${logexp(opand2(exp))})`;
+//         return str;
+//     }
+// }
+
 function logexp(exp) {
     let str;
     if(exp.constructor !== Array) {
         return exp;
     } else {
-        str = `(${optor(exp)} ${logexp(opand1(exp))} ${logexp(opand2(exp))})`;
+        str = `(${logexp(opand1(exp))} ${optor(exp)} ${logexp(opand2(exp))})`;
         return str;
     }
 }
