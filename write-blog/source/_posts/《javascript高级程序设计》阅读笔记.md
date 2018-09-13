@@ -1,5 +1,5 @@
 ---
-title: 《javascript高级程序设计》阅读笔记
+title: 《javascript高级程序设计》小记
 date: 2018-07-21 11:41:12
 categories: 
 - 编程
