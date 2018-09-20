@@ -1,8 +1,6 @@
 ---
 title: 《javascript高级程序设计》小记
 date: 2018-07-21 11:41:12
-categories: 
-- 编程
 tags: 
 - javascript
 - 编程笔记
